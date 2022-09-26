@@ -1,0 +1,7 @@
+//khai bao kieu du lieu//
+export interface IStudent{
+  id:number;
+  name:string;
+  age:number;
+  address:string;
+}

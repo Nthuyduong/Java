@@ -1,0 +1,39 @@
+<div class="cart">
+  <div class="cart-body">
+    <h1>{{student.name}}</h1>
+    <p class="text-danger">{{student.address}}</p>
+    <p *ngIf="student.age >=18" class="text-info">{{student.age}}</p>
+    <p *ngIf="student.age <18" class="text-danger">{{student.age}}</p>
+
+    <p *ngFor="let xyz of arrayNumber;">
+      {{xyz}} - Xin chao cac ban
+    </p>
+
+    <ul>
+      <li *ngFor="let s of stringArray">
+        {{s}}
+      </li>
+    </ul>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Address</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor ="let t of ls">
+          <td>{{t.id}}1</td>
+          <td>{{t.name}}An</td>
+          <td>{{t.age}}19</td>
+          <td>{{t.address}}8 Ton That Thuyet</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
