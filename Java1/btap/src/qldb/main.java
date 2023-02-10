@@ -95,28 +95,30 @@ public class main {
             danhba.get(i).Display();
         }
     }
-    //Tim kiem
+    //Tim kiem ten trong danh ba
     public static void Timkiem(){
+        ArrayList temphone = new ArrayList();
         String str;
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap ten can tim kiem");
         str= sc.nextLine();
         for(int i=0; i<danhba.size();i++){
             if(danhba.get(i).getName().equalsIgnoreCase(str)){
-                danhba.get(i).Display();
+                temphone.add(danhba.get(i));
             }
-        }System.out.println("Khong tim thay");
+        }
     }
     
     //Xoa
     public static void Xoa(){
         boolean timthay = false;
-        PhoneNumber st = new PhoneNumber();
+        String st;
+        System.out.println("Nhap sdt");
         Scanner sc = new Scanner(System.in);
-        st.Input();
+        st = sc.nextLine();
         for(int i =0; i<danhba.size();i++){
-            if(danhba.get(i).getName().equalsIgnoreCase(st.getName())
-                    && danhba.get(i).getPhone().equalsIgnoreCase(st.getPhone()))
+            if(danhba.get(i).getName().equalsIgnoreCase(st)
+                    && danhba.get(i).getPhone().equalsIgnoreCase(st))
             {
                 danhba.remove(i);
                 timthay = true;
