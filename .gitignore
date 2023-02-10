@@ -40,3 +40,15 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+/Java1/Java-d1/javaday1/nbproject/private/
+/Java1/Java-d1/javaday1/build/
+/Java1/javaday2/nbproject/private/
+/Java1/javaday2/build/
+/Java1/javad3/nbproject/private/
+/Java1/javad3/build/
+/Java1/Java_day4/nbproject/private/
+/Java1/Java_day4/build/
+/Java1/java_day5/nbproject/private/
+/Java1/java_day5/build/
+/Java1/btap/nbproject/private/
+/Java1/btap/build/
