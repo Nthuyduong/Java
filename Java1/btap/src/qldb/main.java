@@ -117,8 +117,8 @@ public class main {
         Scanner sc = new Scanner(System.in);
         st = sc.nextLine();
         for(int i =0; i<danhba.size();i++){
-            if(danhba.get(i).getName().equalsIgnoreCase(st)
-                    && danhba.get(i).getPhone().equalsIgnoreCase(st))
+            if(danhba.get(i).getName().equals(st)
+                    && danhba.get(i).getPhone().equals(st))
             {
                 danhba.remove(i);
                 timthay = true;
