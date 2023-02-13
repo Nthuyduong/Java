@@ -10,10 +10,23 @@ package exam;
  */
 public class ComplexDemo {
     public static void main(String[] args) {
-        Complex cp = new Complex();
-        cp.Input();
-        Complex a = new Complex();
-        cp.add(a);
-        cp.Display();
+        System.out.println("Complex number no1:");
+        Complex cp1 = new Complex();
+        cp1.Input();
+        System.out.println("Complex number no2:");
+        Complex cp2 = new Complex();
+        cp2.Input();
+        
+        //test add
+        System.out.println("Addition:" + cp1.add(cp2));
+        
+        //test subtraction
+        System.out.println("Addition:" +  cp1.subtract(cp2));
+        
+        //test multiply
+        System.out.println("Addition:" +  cp1.multiply(cp2));
+        
+        //test divide
+        System.out.println("Addition:" +  cp1.divide(cp2));
     }
 }
