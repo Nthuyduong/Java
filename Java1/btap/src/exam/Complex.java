@@ -42,7 +42,7 @@ public class Complex {
     public Complex add(Complex otherNumber){
         double newRealPart = this.realPart + otherNumber.realPart;
         double newImaginaryPart = this.imaginaryPart + otherNumber.imaginaryPart;
-        return new Complex (newRealPart, newImaginaryPart);
+        return new Complex(newRealPart, newImaginaryPart);
     }
     
     public Complex subtract(Complex otherNumber){
@@ -70,5 +70,9 @@ public class Complex {
         this.realPart = sc.nextDouble();
         System.out.println("Enter the imaginary part");
         this.imaginaryPart = sc.nextDouble();
+    }
+   
+    public String toString() {
+        return this.realPart + " + " + this.imaginaryPart;
     }
 }

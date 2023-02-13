@@ -18,15 +18,15 @@ public class ComplexDemo {
         cp2.Input();
         
         //test add
-        System.out.println("Addition:" + cp1.add(cp2));
+        System.out.println("Addition:" + cp1.add(cp2).toString());
         
         //test subtraction
-        System.out.println("Addition:" +  cp1.subtract(cp2));
+        System.out.println("Subtraction:" +  cp1.subtract(cp2).toString());
         
         //test multiply
-        System.out.println("Addition:" +  cp1.multiply(cp2));
+        System.out.println("Multiply:" +  cp1.multiply(cp2).toString());
         
         //test divide
-        System.out.println("Addition:" +  cp1.divide(cp2));
+        System.out.println("Divide:" +  cp1.divide(cp2).toString());
     }
 }
