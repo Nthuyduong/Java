@@ -24,7 +24,7 @@ public class HashMap {
         String res;
         while(true){
             Contact st = new Contact();
-            st.Input();
+            st.InputContact();
             list.add(st);
             System.out.print("Continue? (Y/N)");
             res = sc.nextLine();
@@ -36,6 +36,7 @@ public class HashMap {
     }
     
     //Find contact by name
+    
     
     //Display contacts
     public void DisplayContact()

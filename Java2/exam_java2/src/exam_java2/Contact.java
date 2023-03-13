@@ -38,7 +38,7 @@ public class Contact {
         this.Phone = Phone;
     }
     
-    public void Input(){
+    public void InputContact(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Name");
         this.Name = sc.nextLine();
