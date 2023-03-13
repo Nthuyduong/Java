@@ -42,7 +42,7 @@ public class HashMap {
         boolean found = false;
         for (Contact contact : list) {
             if (contact.getName().equals(name)) {
-                System.out.println("Here is" + contact.getName() + "phone: " + contact.getPhone());
+                System.out.println("Here is" + " " + contact.getName() + " " + "phone: " + contact.getPhone());
                 found = true;
                 break;
             }
@@ -60,8 +60,8 @@ public class HashMap {
             System.out.println("List is empty");
             return;
         }
-        System.out.format("\nAdress Book");
-        System.out.format("\n% -10s    % -25s", "Contact Name", "Phone Number");
+        System.out.println("\nAdress Book");
+        System.out.println("Contact Name" + "     " + "Phone Number");
         
         for(Contact st : list)
         {
