@@ -1,0 +1,69 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package exam;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author nguyenthuyduong
+ */
+public class Main {
+    public static int inputint(){
+        Scanner sc = new Scanner(System.in);
+        int n=0;
+        while(true)
+        {
+            try{
+                String str = sc.nextLine();
+                n = Integer.parseInt(str);
+                return n;
+            }
+            catch(Exception e){
+                System.out.println("");
+            }
+        }
+    }
+    
+    public static int Menu()
+    {
+        int choice;
+        System.out.println("\n-----  MENU  -----");
+        System.out.println("1. Add new Students");
+        System.out.println("2. Save");
+        System.out.println("3. Display All Students");
+        System.out.println("4. Exit");
+        choice = inputint();
+        return choice;
+    }
+    
+    public static void main(String[] args) {
+        StudentManager stm = new StudentManager();
+        int choice;
+        do{
+            choice = Menu();
+            //xử lý chọn
+            switch(choice)
+            {
+                case 1:
+                    stm.AddStudent();
+                    System.out.println("Input Completed");
+                    break;
+                case 2:
+                    System.out.println("Save to Student.dat");
+                    break;
+                case 3:
+                    System.out.println("Display all Students");
+                    stm.DisplayStudent();
+                    break;
+                case 4:
+                    System.out.println("Good Bye!");
+                    break;
+                default:
+                    System.out.println("Pls, Input 1-4");
+            }
+        }while(choice!=4);
+    }
+}
