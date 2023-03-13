@@ -61,7 +61,7 @@ public class HashMap {
             return;
         }
         System.out.println("\n       Adress Book");
-        System.out.println("Contact Name" + "          " + "Phone Number");
+        System.out.println("Contact Name" + "     " + "Phone Number");
         
         for(Contact st : list)
         {
