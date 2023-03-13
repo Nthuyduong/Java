@@ -57,7 +57,8 @@ public class Main {
                     System.out.println("Input Completed");
                     break;
                 case 2:
-                    System.out.println("Find contact by name");
+                    System.out.print("Enter a name to search: ");
+                    stm.FindContact();
                     break;
                 case 3:
                     System.out.println("Display contacts");

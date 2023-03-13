@@ -36,7 +36,21 @@ public class HashMap {
     }
     
     //Find contact by name
-    
+    public void FindContact(){
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        boolean found = false;
+        for (Contact contact : list) {
+            if (contact.getName().equals(name)) {
+                System.out.println("Here is" + contact.getName() + "phone: " + contact.getPhone());
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("Not found");
+        }
+    }
     
     //Display contacts
     public void DisplayContact()
