@@ -4,17 +4,50 @@
  */
 package exam_java2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author nguyenthuyduong
  */
 public class Contact {
+    public String Name;
+    public String Phone;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public Contact() {
+    }
+
+    public Contact(String Name, String Phone) {
+        this.Name = Name;
+        this.Phone = Phone;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+    public String getPhone() {
+        return Phone;
+    }
+
+    public void setPhone(String Phone) {
+        this.Phone = Phone;
     }
     
+    public void Input(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Name");
+        this.Name = sc.nextLine();
+        System.out.println("Enter Phone Number");
+        this.Phone = sc.nextLine();
+
+    }
+    
+    public void Display(){
+        System.out.format("% -10s       % -25s", this.Name,this.Phone);
+    }
 }

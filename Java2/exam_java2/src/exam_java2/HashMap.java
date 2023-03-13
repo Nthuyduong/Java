@@ -4,10 +4,16 @@
  */
 package exam_java2;
 
+import java.util.Vector;
+
 /**
  *
  * @author nguyenthuyduong
  */
 public class HashMap {
+    Vector<Contact> list;
     
+    public HashMap(){
+        this.list = new Vector<Contact>();
+    }
 }
