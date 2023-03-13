@@ -8,7 +8,7 @@ package exam_java2;
  *
  * @author nguyenthuyduong
  */
-public class Exam_java2 {
+public class Contact {
 
     /**
      * @param args the command line arguments
