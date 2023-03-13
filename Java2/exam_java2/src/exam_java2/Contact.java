@@ -48,6 +48,6 @@ public class Contact {
     }
     
     public void Display(){
-        System.out.format("% -10s       % -25s", this.Name,this.Phone);
+        System.out.println(this.Name + "          " + this.Phone);
     }
 }

@@ -60,8 +60,8 @@ public class HashMap {
             System.out.println("List is empty");
             return;
         }
-        System.out.println("\nAdress Book");
-        System.out.println("Contact Name" + "     " + "Phone Number");
+        System.out.println("\n       Adress Book");
+        System.out.println("Contact Name" + "          " + "Phone Number");
         
         for(Contact st : list)
         {
